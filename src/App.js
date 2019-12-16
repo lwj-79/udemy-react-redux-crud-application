@@ -1,27 +1,33 @@
+//import React, {Component} from 'react';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+// function App() {
+//   return <div>Hello, world!!</div>
+// }
+
+// class App extends Component{
+//   render(){
+//     return (
+//       <React.Fragment>
+//         <label htmlFor='bar'>bar</label>
+//         <input type='text' id='bar' onChange={() => {console.log('I am clicked');}}/>
+//       </React.Fragment>
+//     );
+//   }
+// }
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello, world!</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <React.Fragment>
+      <Cat />
+      <Cat />
+      <Cat />
+      <Cat />
+    </React.Fragment>);
+}
+
+const Cat = () => {
+  return <div>Meow!</div>;
 }
 
 export default App;
