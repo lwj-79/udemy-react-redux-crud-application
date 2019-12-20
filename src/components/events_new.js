@@ -4,6 +4,7 @@ import { Field, reduxForm } from 'redux-form'
 import { Link } from 'react-router-dom'
 import { postEvent } from '../actions'
 
+
 class EventsNew extends Component{
   constructor(props) {
     super(props);
